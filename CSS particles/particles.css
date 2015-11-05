@@ -1,0 +1,61 @@
+body, html { display: block; height: 100%; margin: 0; overflow: hidden; padding: 0; width: 100%;}
+body { background: #000; }
+
+#stage { display: block; float: left; height: 100%; position: absolute; width: 100%;}
+.monitor { border: 1px solid #f00; clear: left; color: #fff; float: left; }
+
+.particle { animation-duration: 3.5s; animation-name: burn; background: transparent; box-shadow: 0 0 20px #f00; height: 1px; width: 1px; position: absolute; }
+
+@keyframes burn {
+	0% {
+		background: #f00;
+		box-shadow: 0 0 20px #f00;
+		height: 1px;
+		transform: rotate(0);
+		width: 1px;
+	}
+	10% {
+		background: #00fff2;
+		border-radius: 0%;
+		box-shadow: 0 0 20px #00fff2;
+	}
+	25% {
+		background: #fff;
+		box-shadow: 0 0 20px #fff;
+	}
+	35% {
+		background: #ff00cf;
+		border-radius: 50%;
+		box-shadow: 0 0 20px #ff00cf;
+	}
+	50% {
+		background: #ff9100;
+		box-shadow: 0 0 20px #ff9100;
+		margin-top: 0px;
+	}
+	65% {
+		background: #13ff00;
+		box-shadow: 0 0 20px #13ff00;
+	}
+	80% {
+		background: #f00;
+		box-shadow: 0 0 20px #f00;
+		height: 30px;
+		opacity: 1;
+		transform: rotate(200deg);
+		width: 30px;
+	}
+	95% {
+		background: #ff0;
+		box-shadow: 0 0 20px #ff0;
+	}
+	100% {
+		background: #ff0;
+		border-radius: 0;
+		box-shadow: 0 0 20px #ff0;
+		height: 30px;
+		opacity: 0;
+		transform: translate(0, 150px);
+		width: 30px;
+	}
+}
