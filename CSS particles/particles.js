@@ -37,7 +37,7 @@ var particles = (function() {
             
             vars.timerStopPart = setTimeout(methods.stopParticles, 200);
             
-            methods.addParticles;
+            methods.addParticles();
         },
         mouseMove      : function() {
                 
@@ -48,7 +48,7 @@ var particles = (function() {
                 
                 clearTimeout(vars.timerStopPart);
                 
-                if(!vars.isRunning) { methods.addParticles; }
+                if(!vars.isRunning) { methods.addParticles(); }
             }
         }(),
         stopParticles     : function() {
@@ -58,7 +58,7 @@ var particles = (function() {
         }
     }
         
-    return false;    
+    return false;
 
 })();
 
